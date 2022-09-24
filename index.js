@@ -14,7 +14,6 @@ const checking = (a, b) => {
 };
 checking(100, 100);
 
-
 // Exercise 2
 // Write a js program to get the current date.
 
@@ -36,4 +35,15 @@ const newString = (str) => {
 	}
 };
 
-console.log(newString("Sakib"));
+// console.log(newString("Sakib"));
+
+// Exercise 4
+// Write a js program to extract the first half of a string of even length.
+
+const firstHalf = (str) => {
+	if (str.length % 2 === 0) {
+		return str.slice(0, str.length / 2);
+	}
+};
+
+// console.log(firstHalf("Take"));

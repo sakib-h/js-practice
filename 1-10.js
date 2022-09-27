@@ -118,3 +118,22 @@ const isLeapYear = (year) => {
 };
 
 console.log(isLeapYear(2024));
+
+// Exercise 10
+//----> <----
+// Write a js program to find how many Vowels are there in a sentence.
+
+const vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"];
+let count = 0;
+const countVowels = (str) => {
+	const letters = Array.from(str);
+	letters.forEach((letter) => {
+		const isVowel = vowels.includes(letter);
+		if (isVowel) {
+			count++;
+		}
+	});
+};
+
+countVowels("My Name is Sakib");
+console.log(count);

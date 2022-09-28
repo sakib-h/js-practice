@@ -33,15 +33,14 @@ console.log(message);
 // --> Practice 13
 // Write a js program to find the longest string in an array and return its index number
 
-let longestWord = "";
 const longestString = (names) => {
+	let longestWord = "";
 	for (let name of names) {
 		if (name.length > longestWord.length) {
 			longestWord = name;
 		}
 	}
+	return [longestWord, names.indexOf(longestWord)];
 };
 
-longestString(["Sakib", "Hasan", "Sakib Hasan"]);
-
-console.log(longestWord);
+console.log(longestString(["Sakib", "Hasan", "Sakib Hasan"]));

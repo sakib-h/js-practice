@@ -63,3 +63,10 @@ const fizzBuzz = (start, end) => {
 };
 
 fizzBuzz(1, 30);
+
+// --> Practice 15
+// Create a function that will convert from Celsius to Fahrenheit
+
+const celsiusToFahrenheit = (celsius) => celsius * 1.8 + 32;
+
+console.log(celsiusToFahrenheit(0));
